@@ -9,12 +9,13 @@
 
 ## 🚀 About Me
 
-I'm a passionate **Full-Stack & Data Engineer** who loves building scalable distributed systems and real-time data pipelines. I enjoy working with modern technologies to solve complex problems.
+I'm an **AI Engineer, Full-Stack Developer & Cloud/Embedded Systems Programmer** passionate about designing secure, intelligent, and scalable solutions. I specialize in building distributed systems, real-time data pipelines, and production-ready applications.
 
-- 🔭 Currently working on **real-time streaming applications**
-- 🌱 Learning **Cloud Architecture** and **MLOps**
-- 💬 Ask me about **Java, React, Kafka, Flink, Docker, Kubernetes**
-- ⚡ Fun fact: I believe in building systems that scale!
+- 🤖 Building **AI-powered applications** and intelligent systems
+- 💻 Developing **full-stack solutions** with modern frameworks
+- ☁️ Architecting **cloud-native** and **embedded systems**
+- 🔒 Focused on **secure and scalable** system design
+- 💬 Ask me about **Java, React, Kafka, Flink, Docker, Kubernetes, AI/ML**
 
 ---
 
@@ -52,8 +53,12 @@ I'm a passionate **Full-Stack & Data Engineer** who loves building scalable dist
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
-  <img src="https://streak-stats.demolab.com/?user=geomathewjoseph&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="165" />
+  <a href="https://github.com/geomathewjoseph">
+    <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
+  </a>
+  <a href="https://git.io/streak-stats">
+    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=geomathewjoseph&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="165" />
+  </a>
 </div>
 
 <div align="center">
