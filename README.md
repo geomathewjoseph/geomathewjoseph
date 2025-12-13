@@ -9,13 +9,26 @@
 
 ## 🚀 About Me
 
-I'm an **AI Engineer, Full-Stack Developer & Cloud/Embedded Systems Programmer** passionate about designing secure, intelligent, and scalable solutions. I specialize in building distributed systems, real-time data pipelines, and production-ready applications.
+```yaml
+name: Geo Mathew Joseph
+roles:
+  - AI Engineer
+  - Full-Stack Developer  
+  - Cloud & Embedded Systems Programmer
+mission: Designing Secure, Intelligent, and Scalable Solutions
+location: India 🇮🇳
+```
 
-- 🤖 Building **AI-powered applications** and intelligent systems
-- 💻 Developing **full-stack solutions** with modern frameworks
-- ☁️ Architecting **cloud-native** and **embedded systems**
-- 🔒 Focused on **secure and scalable** system design
-- 💬 Ask me about **Java, React, Kafka, Flink, Docker, Kubernetes, AI/ML**
+🔭 **What I Do:**
+- Craft **AI-powered applications** that solve real-world problems
+- Build **production-ready distributed systems** with modern architectures
+- Design **cloud-native solutions** that scale effortlessly
+- Develop **embedded systems** for IoT and edge computing
+
+🎯 **Currently:**
+- 🛠️ Building real-time streaming platforms with Kafka & Flink
+- 🧠 Exploring LLMs and Generative AI applications
+- ☁️ Mastering cloud architectures on AWS/GCP
 
 ---
 
