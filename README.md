@@ -9,28 +9,17 @@
 
 ## 🚀 About Me
 
-```yaml
-name: Geo Mathew Joseph
-roles:
-  - Systems & AI Engineer
-  - Full-Stack Developer  
-  - Technical Operations Lead
-mission: Building systems where artificial intelligence meets engineering precision.
-location: India 🇮🇳
-```
+**Systems & AI Engineer | Technical Operations Lead | Community Builder**
 
-🔭 **What I Do:**
+I build systems where artificial intelligence meets engineering precision. My work spans from low-level **Rust kernels** and **Edge-AI** on embedded systems to high-throughput **distributed streaming platforms**. I thrive at the intersection of performance and intelligence.
 
-- Engineer **custom OS kernels** (Rust/C) and low-level systems
-- Develop **Edge-AI solutions** and **Medical Imaging pipelines** (MONAI/PyTorch)
-- Architect **distributed streaming platforms** using Kappa Architecture
-- Lead technical communities and professional organizations (IEEE/AI Association)
-
-🎯 **Currently:**
-
-- 🛡️ Developing an AI-based **Drone Detection System** on RPi5
-- 🦀 Building **Intent OS**, a 64-bit multi-core kernel in Rust
-- 🧠 Mastering **Prompt Engineering (Level 3)** and LLM orchestration
+- 🔭 **Engineering Scope:**
+  - Crafting **custom 64-bit kernels** (Rust/C) with multi-core SMP support.
+  - Designing **Real-time Incident Detection** using Kappa Architecture (Flink/Kafka).
+  - Fine-tuning **Computer Vision** models (YOLOv8) for high-stakes edge deployments.
+- 🏆 **Recognition:** National Top 16 Finalist at **Smart India Hackathon (SIH)** for medical mapping innovation.
+- 👥 **Leadership:** Chairman of the **AI Association** and Vice Chair of **IEEE SB MCE**, driving technical excellence in peer communities.
+- 🎯 **Current Focus:** perfecting **Intent OS** and scaling real-time medical imaging pipelines.
 
 ---
 
@@ -131,7 +120,7 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <div align="center">
   <a href="https://github.com/geomathewjoseph">
-    <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
+    <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
   </a>
   <a href="https://git.io/streak-stats">
     <img src="https://github-readme-streak-stats-eight.vercel.app/?user=geomathewjoseph&theme=dark&hide_border=true" alt="GitHub Streak" height="165" />
@@ -160,4 +149,3 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 ⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
-
