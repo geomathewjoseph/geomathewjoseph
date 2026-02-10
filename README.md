@@ -14,10 +14,9 @@
 I build systems where artificial intelligence meets engineering precision. My work spans from low-level **Rust kernels** and **Edge-AI** on embedded systems to high-throughput **distributed streaming platforms**. I thrive at the intersection of performance and intelligence.
 
 - 🔭 **Engineering Scope:**
-  - Crafting **custom 64-bit kernels** (Rust/C) with multi-core SMP support.
+  - Crafting **custom 64-bit kernels** (Rust) with multi-core SMP support.
   - Designing **Real-time Incident Detection** using Kappa Architecture (Flink/Kafka).
   - Fine-tuning **Computer Vision** models (YOLOv8) for high-stakes edge deployments.
-- 🏆 **Recognition:** National Top 16 Finalist at **Smart India Hackathon (SIH)** for medical mapping innovation.
 - 👥 **Leadership:** Chairman of the **AI Association** and Vice Chair of **IEEE SB MCE**, driving technical excellence in peer communities.
 - 🎯 **Current Focus:** perfecting **Intent OS** and scaling real-time medical imaging pipelines.
 
@@ -149,3 +148,4 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 ⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
+
