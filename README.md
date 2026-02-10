@@ -17,7 +17,7 @@ I build systems where artificial intelligence meets engineering precision. My wo
   - Crafting **custom 64-bit kernels** (Rust) with multi-core SMP support.
   - Designing **Real-time Incident Detection** using Kappa Architecture (Flink/Kafka).
   - Fine-tuning **Computer Vision** models (YOLOv8) for high-stakes edge deployments.
-- 👥 **Leadership:** Chairman of the **AI Association** and Vice Chair of **IEEE SB MCE**, driving technical excellence in peer communities.
+- 👥 Community and leadership driven
 - 🎯 **Current Focus:** perfecting **Intent OS** and scaling real-time medical imaging pipelines.
 
 ---
@@ -148,4 +148,5 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 ⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
+
 
