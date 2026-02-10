@@ -1,11 +1,16 @@
 # 👋 Hi, I'm Geo Mathew Joseph
 
 <div align="center">
-  
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)](https://github.com/geomathewjoseph)
+<img src="https://user-images.githubusercontent.com/20955511/199138068-0a7b7b75-a024-4f00-803f-30a19c5d1b2d.png" alt="Geo Mathew Joseph Header" />
+
 [![GitHub followers](https://img.shields.io/github/followers/geomathewjoseph?style=social)](https://github.com/geomathewjoseph)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/geomathewjoseph/)
 
 </div>
+
+## 🚀 About Me
 
 ## 🚀 About Me
 
@@ -120,18 +125,9 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <a href="https://github.com/geomathewjoseph">
-    <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
-  </a>
-  <a href="https://git.io/streak-stats">
-    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=geomathewjoseph&theme=dark&hide_border=true" alt="GitHub Streak" height="165" />
-  </a>
-</div>
-
 ---
+
+## 📊 Activity
 
 ## 📫 Connect With Me
 
@@ -150,9 +146,6 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <div align="center">
   
-💖 From [geomathewjoseph](https://github.com/geomathewjoseph)
+⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
-
-
-
