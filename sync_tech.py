@@ -62,6 +62,9 @@ TECH_MAP = {
     "SQLite": "https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
     "GraphQL": "https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white",
     "Android Studio": "https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white",
+    "Arduino": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white",
+    "ESP32": "https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white",
+    "Raspberry Pi": "https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberry-pi&logoColor=white",
 }
 
 # Categorization of technologies
@@ -69,6 +72,7 @@ CATEGORIES = {
     "Languages": ["Rust", "Python", "Java", "TypeScript", "JavaScript", "C++", "C", "Go", "Kotlin", "Swift", "Dart", "Shell", "Bash", "PowerShell"],
     "Artificial Intelligence & Machine Learning": ["PyTorch", "TensorFlow", "Keras", "YOLOv8", "YOLO", "OpenCV", "MediaPipe", "MONAI", "Scikit-Learn", "Pandas", "NumPy"],
     "Systems & Data Engineering": ["Apache Kafka", "Apache Flink", "Redis", "PostGIS", "Docker", "Kubernetes", "Google Cloud", "AWS", "Azure", "Linux", "Git", "GitHub Actions"],
+    "Embedded Systems & Robotics": ["Arduino", "ESP32", "Raspberry Pi"],
     "Web & App Development": ["Next.js", "React", "Node.js", "Socket.io", "Tailwind CSS", "FastAPI", "Flask", "Android", "Android Studio", "Flutter", "Vercel", "Netlify", "Heroku", "GraphQL"],
 }
 
@@ -79,9 +83,9 @@ REPO_OVERRIDES = {
     "Health-AI-Sync": ["Python", "MONAI", "PyTorch", "NumPy", "Pandas"],
     "gesture-assistant": ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
     "Intent-OS": ["Rust", "C", "Linux", "Bash"],
-    "Drone-Detection": ["Python", "YOLOv8", "OpenCV", "Raspberry Pi", "Linux"],
+    "Drone-Detection": ["Python", "YOLOv8", "OpenCV", "Raspberry Pi", "Linux", "Arduino"],
     "aiml-roadmap": ["Scikit-Learn", "Pandas", "NumPy", "Git", "GitHub Actions"],
-    "geomathewjoseph": ["Google Cloud", "Git", "GitHub Actions", "Android Studio", "Flutter", "Dart"] # Add profile-level skills
+    "geomathewjoseph": ["Google Cloud", "Git", "GitHub Actions", "Android Studio", "Flutter", "Dart", "Arduino", "ESP32", "Raspberry Pi"] # Add profile-level skills
 }
 
 def get_repos():
