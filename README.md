@@ -21,8 +21,8 @@ location: India 🇮🇳
 
 🔭 **What I Do:**
 
-- Engineer **custom OS kernels** (Rust) and low-level systems
-- Develop **Edge-AI solutions** for real-time aerial surveillance
+- Engineer **custom OS kernels** (Rust/C) and low-level systems
+- Develop **Edge-AI solutions** and **Medical Imaging pipelines** (MONAI/PyTorch)
 - Architect **distributed streaming platforms** using Kappa Architecture
 - Lead technical communities and professional organizations (IEEE/AI Association)
 
@@ -44,26 +44,30 @@ location: India 🇮🇳
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-### AI & Systems
+### Artificial Intelligence & Machine Learning
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-FF3838?style=for-the-badge&logo=yolo&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-00C0FF?style=for-the-badge&logo=google&logoColor=white)
+![MONAI](https://img.shields.io/badge/MONAI-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 
-### Backend & Data
+### Systems & Data Engineering
 
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 ![Apache Flink](https://img.shields.io/badge/Apache_Flink-E6526F?style=for-the-badge&logo=apache-flink&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-### DevOps & Cloud
-
-![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+
+### Web & App Development
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white)
 
 </div>
 
@@ -75,16 +79,17 @@ location: India 🇮🇳
 
 Real-time incident detection platform using **Kappa Architecture**. Processes high-throughput events with anomaly detection and live K8s-deployed dashboards.
 
-### 🦀 [Intent OS](https://github.com/geomathewjoseph) *(Private/In-Progress)*
+### 🧠 [Synapse](https://github.com/geomathewjoseph/synapse)
 
-A custom **64-bit Rust kernel** featuring **SMP (Symmetric Multi-Processing)** support and multi-core task scheduling.
+Real-time collaboration whiteboard built with **Next.js**, **Socket.io**, and **Redis**.
 
-### 🚁 [Drone Detection System](https://github.com/geomathewjoseph) *(Private/In-Progress)*
+### 🏥 [Health-AI-Sync](https://github.com/geomathewjoseph/Health-AI-Sync)
+
+Medical imaging AI leveraging the **MONAI** framework and **PyTorch** for synchronized clinical analysis.
+
+### 🚁 [Drone Detection System](https://github.com/geomathewjoseph) *(Private)*
 
 Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% mAP** using custom-trained YOLOv8 and Kalman Filter tracking.
-
-> [!NOTE]
-> *Project source code for Intent OS and Drone Detection are currently private while undergoing final optimizations.*
 
 ---
 
