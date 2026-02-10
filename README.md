@@ -158,27 +158,9 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <div align="center">
 
-### 🦀 Intent OS Development Progress
-
-| Feature | Status |
-| :--- | :---: |
-| 64-bit GDT & TSS | ✅ |
-| Interrupt Handling (IDT) | ✅ |
-| Multi-core SMP Initialization | ✅ |
-| Preemptive Scheduler | 🏗️ |
-| Virtual Memory Management | 🏗️ |
-
-<br/>
-
 ### 🐍 Contribution Snake
 
 ![Snake animation](https://github.com/geomathewjoseph/geomathewjoseph/blob/output/github-contribution-grid-snake.svg)
-
-<br/>
-
-### 🕒 WakaTime Stats
-
-[![Geo's Wakatime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=geomathewjoseph&theme=dark&layout=compact)](https://github.com/geomathewjoseph)
 
 </div>
 
