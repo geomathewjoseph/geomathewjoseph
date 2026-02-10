@@ -36,6 +36,7 @@ location: India 🇮🇳
 
 ## 🛠️ Tech Stack
 
+<!-- TECH_STACK_START -->
 <div align="center">
 
 ### Languages
