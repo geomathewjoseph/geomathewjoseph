@@ -122,38 +122,58 @@ def extract_tech(repos):
 
     return list(techs) # Return list, sorting happens in generation
 
-def generate_markdown(techs_list):
-    md = ""
+def get_language_stats(repos):
+    headers = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
+    lang_bytes = {}
     
-    # Generate sections based on CATEGORIES order
-    for category, allowed_techs in CATEGORIES.items():
-        # Filter techs that belong to this category AND are present in the user's stack
-        category_techs = [t for t in allowed_techs if t in techs_list]
+    for repo in repos:
+        # Fetch detailed language bytes for each repo
+        lang_url = repo["languages_url"]
+        response = requests.get(lang_url, headers=headers)
+        if response.status_code == 200:
+            repo_langs = response.json()
+            for lang, bytes_count in repo_langs.items():
+                lang_bytes[lang] = lang_bytes.get(lang, 0) + bytes_count
+                
+    # Calculate percentages
+    total_bytes = sum(lang_bytes.values())
+    if total_bytes == 0:
+        return ""
         
-        if category_techs:
-            md += f'\n### {category}\n<div align="center">\n\n'
-            for tech in category_techs:
-                if tech in TECH_MAP:
-                    md += f'![{tech}]({TECH_MAP[tech]})\n'
-            md += '\n</div>\n'
-            
+    sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)
+    
+    # Generate progress bar Markdown
+    md = '\n### 📊 Language Proportions (Private + Public)\n<div align="center">\n\n'
+    for lang, bytes_count in sorted_langs[:8]: # Top 8 languages
+        percentage = (bytes_count / total_bytes) * 100
+        # Create a simple CSS-based progress bar for README
+        filled = int(percentage / 10)
+        bar = "█" * filled + "░" * (10 - filled)
+        md += f"**{lang}**: {percentage:.1f}% (`{bar}`)\n\n"
+    md += '</div>\n'
     return md
 
-def update_readme(new_content):
+def update_readme(tech_content, lang_content):
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
     
-    pattern = r"<!-- TECH_STACK_START -->.*?<!-- TECH_STACK_END -->"
-    replacement = f"<!-- TECH_STACK_START -->{new_content}<!-- TECH_STACK_END -->"
+    # Update Tech Stack
+    pattern_tech = r"<!-- TECH_STACK_START -->.*?<!-- TECH_STACK_END -->"
+    replacement_tech = f"<!-- TECH_STACK_START -->{tech_content}<!-- TECH_STACK_END -->"
+    content = re.sub(pattern_tech, replacement_tech, content, flags=re.DOTALL)
     
-    new_readme = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    # Update Language Stats
+    pattern_lang = r"<!-- LANG_STATS_START -->.*?<!-- LANG_STATS_END -->"
+    replacement_lang = f"<!-- LANG_STATS_START -->{lang_content}<!-- LANG_STATS_END -->"
+    content = re.sub(pattern_lang, replacement_lang, content, flags=re.DOTALL)
     
     with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(new_readme)
+        f.write(content)
 
 if __name__ == "__main__":
     repos = get_repos()
     techs = extract_tech(repos)
-    markdown = generate_markdown(techs)
-    update_readme(markdown)
-    print("README tech stack updated successfully!")
+    tech_md = generate_markdown(techs)
+    lang_md = get_language_stats(repos)
+    update_readme(tech_md, lang_md)
+    print("README updated with tech stack and language stats!")

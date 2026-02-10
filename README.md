@@ -158,9 +158,8 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <div align="center">
 
-### 📊 Top Languages
-
-![Top Langs](https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=geomathewjoseph&layout=compact&theme=dark&hide_border=true&langs_count=8)
+<!-- LANG_STATS_START -->
+<!-- LANG_STATS_END -->
 
 <br/>
 
