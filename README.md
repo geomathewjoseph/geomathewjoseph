@@ -9,8 +9,6 @@
 
 ## 🚀 About Me
 
-## 🚀 About Me
-
 **Synergizing AI with Systems Engineering | Building the Infrastructure of Intelligence**
 
 I am a Systems & AI Engineer obsessed with the intersection of performance and intelligence. I specialize in engineering the low-level infrastructure and distributed systems that allow AI to scale—from custom **64-bit Rust kernels** to high-throughput **Kappa-architected streaming platforms**.
@@ -155,3 +153,4 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 ⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
+
