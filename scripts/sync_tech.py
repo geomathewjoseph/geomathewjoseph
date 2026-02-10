@@ -66,19 +66,29 @@ TECH_MAP = {
     "GraphQL": "https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white",
 }
 
+# Categorization of technologies
+CATEGORIES = {
+    "Languages": ["Rust", "Python", "Java", "TypeScript", "JavaScript", "C++", "C", "Go", "Kotlin", "Swift", "Dart", "Shell", "Bash", "PowerShell"],
+    "Artificial Intelligence & Machine Learning": ["PyTorch", "TensorFlow", "Keras", "YOLOv8", "YOLO", "OpenCV", "MediaPipe", "MONAI", "Scikit-Learn", "Pandas", "NumPy"],
+    "Systems & Data Engineering": ["Apache Kafka", "Apache Flink", "Redis", "PostGIS", "Docker", "Kubernetes", "Google Cloud", "AWS", "Azure", "Linux", "Git", "GitHub Actions"],
+    "Web & App Development": ["Next.js", "React", "Node.js", "Socket.io", "Tailwind CSS", "FastAPI", "Flask", "Android", "Flutter", "Vercel", "Netlify", "Heroku", "GraphQL"],
+}
+
 # Explicit overrides to ensure "Hidden Gems" are always captured from specific repos
 REPO_OVERRIDES = {
-    "SentinelStream": ["Java", "Flink", "Kafka", "Kubernetes", "Docker", "Redis"],
-    "synapse": ["TypeScript", "Next.js", "React", "Redis", "Socket.io"],
-    "Health-AI-Sync": ["Python", "MONAI", "PyTorch", "Medical Imaging"],
+    "SentinelStream": ["Java", "Flink", "Kafka", "Kubernetes", "Docker", "Redis", "Linux"],
+    "synapse": ["TypeScript", "Next.js", "React", "Redis", "Socket.io", "Vercel"],
+    "Health-AI-Sync": ["Python", "MONAI", "PyTorch", "NumPy", "Pandas"],
     "gesture-assistant": ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
-    "Intent-OS": ["Rust", "C", "Assembly", "Operating System"],
-    "Drone-Detection": ["Python", "YOLOv8", "OpenCV", "Raspberry Pi"],
+    "Intent-OS": ["Rust", "C", "Linux", "Bash"],
+    "Drone-Detection": ["Python", "YOLOv8", "OpenCV", "Raspberry Pi", "Linux"],
+    "aiml-roadmap": ["Scikit-Learn", "Pandas", "NumPy", "Git", "GitHub Actions"],
+    "geomathewjoseph": ["Google Cloud", "Git", "GitHub Actions"] # Add profile-level skills
 }
 
 def get_repos():
     headers = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
-    url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100" # Ensure we get all repos
+    url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100"
     response = requests.get(url, headers=headers)
     return response.json()
 
@@ -101,22 +111,30 @@ def extract_tech(repos):
                 if normalized == key.lower().replace("-", "").replace(".", ""):
                     techs.add(key)
         
-        # 2. Apply Overrides (Force add techs if repo matches)
-        # Check standard name or case-insensitive match
+        # 2. Apply Overrides
         for override_name, override_techs in REPO_OVERRIDES.items():
             if repo_name.lower() == override_name.lower():
                 for t in override_techs:
-                    if t in TECH_MAP: # Only add if we have a badge for it
+                    if t in TECH_MAP:
                         techs.add(t)
 
-    return sorted(list(techs))
+    return list(techs) # Return list, sorting happens in generation
 
-def generate_markdown(techs):
-    md = '\n<div align="center">\n'
-    for tech in techs:
-        if tech in TECH_MAP:
-            md += f'![{tech}]({TECH_MAP[tech]})\n'
-    md += '</div>\n'
+def generate_markdown(techs_list):
+    md = ""
+    
+    # Generate sections based on CATEGORIES order
+    for category, allowed_techs in CATEGORIES.items():
+        # Filter techs that belong to this category AND are present in the user's stack
+        category_techs = [t for t in allowed_techs if t in techs_list]
+        
+        if category_techs:
+            md += f'\n### {category}\n<div align="center">\n\n'
+            for tech in category_techs:
+                if tech in TECH_MAP:
+                    md += f'![{tech}]({TECH_MAP[tech]})\n'
+            md += '\n</div>\n'
+            
     return md
 
 def update_readme(new_content):
