@@ -10,7 +10,8 @@ on:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       
@@ -25,7 +26,7 @@ jobs:
       - name: Run sync script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/sync_tech.py
+        run: python sync_tech.py
         
       - name: Commit and push changes
         run: |
