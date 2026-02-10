@@ -63,23 +63,52 @@ TECH_MAP = {
     "GraphQL": "https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white",
 }
 
+    "GraphQL": "https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white",
+}
+
+# Explicit overrides to ensure "Hidden Gems" are always captured from specific repos
+REPO_OVERRIDES = {
+    "SentinelStream": ["Java", "Flink", "Kafka", "Kubernetes", "Docker", "Redis"],
+    "synapse": ["TypeScript", "Next.js", "React", "Redis", "Socket.io"],
+    "Health-AI-Sync": ["Python", "MONAI", "PyTorch", "Medical Imaging"],
+    "gesture-assistant": ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
+    "Intent-OS": ["Rust", "C", "Assembly", "Operating System"],
+    "Drone-Detection": ["Python", "YOLOv8", "OpenCV", "Raspberry Pi"],
+}
+
 def get_repos():
     headers = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
-    url = f"https://api.github.com/users/{USERNAME}/repos"
+    url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100" # Ensure we get all repos
     response = requests.get(url, headers=headers)
     return response.json()
 
 def extract_tech(repos):
     techs = set()
+    
+    # 1. Scan Repositories
     for repo in repos:
+        repo_name = repo["name"]
+        
+        # Add Language
         if repo.get("language"):
             techs.add(repo["language"])
+            
+        # Add Topics
         topics = repo.get("topics", [])
         for topic in topics:
             normalized = topic.lower().replace("-", "").replace(".", "")
             for key in TECH_MAP.keys():
                 if normalized == key.lower().replace("-", "").replace(".", ""):
                     techs.add(key)
+        
+        # 2. Apply Overrides (Force add techs if repo matches)
+        # Check standard name or case-insensitive match
+        for override_name, override_techs in REPO_OVERRIDES.items():
+            if repo_name.lower() == override_name.lower():
+                for t in override_techs:
+                    if t in TECH_MAP: # Only add if we have a badge for it
+                        techs.add(t)
+
     return sorted(list(techs))
 
 def generate_markdown(techs):
