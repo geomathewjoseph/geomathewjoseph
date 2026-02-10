@@ -154,7 +154,7 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 ---
 
-## 📈 Coding Metrics & Activity
+## 📈 Activity
 
 <div align="center">
 
@@ -180,3 +180,4 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 💖 From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
+
