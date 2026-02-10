@@ -124,7 +124,7 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <div align="center">
   <a href="https://github.com/geomathewjoseph">
-    <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
+    <img src="https://github-readme-stats-one-bice.vercel.app/api?username=geomathewjoseph&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165" />
   </a>
   <a href="https://git.io/streak-stats">
     <img src="https://github-readme-streak-stats-eight.vercel.app/?user=geomathewjoseph&theme=dark&hide_border=true" alt="GitHub Streak" height="165" />
@@ -153,4 +153,5 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 ⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
+
 
