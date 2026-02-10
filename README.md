@@ -150,8 +150,9 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <div align="center">
   
-⭐️ From [geomathewjoseph](https://github.com/geomathewjoseph)
+💖 From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
+
 
 
