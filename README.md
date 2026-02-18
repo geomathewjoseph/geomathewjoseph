@@ -163,6 +163,10 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 
 <br/>
 
+![GitHub Metrics](./github-metrics.svg)
+
+<br/>
+
 ### 🐍 Contribution Snake
 
 ![Snake animation](https://github.com/geomathewjoseph/geomathewjoseph/blob/output/github-contribution-grid-snake.svg)
@@ -180,4 +184,3 @@ Edge-AI pipeline for quadcopter detection on **Raspberry Pi 5**. Achieves **99% 
 💖 From [geomathewjoseph](https://github.com/geomathewjoseph)
 
 </div>
-
